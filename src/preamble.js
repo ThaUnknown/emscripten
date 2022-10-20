@@ -1049,7 +1049,7 @@ function createWasm() {
 #else // singlethreaded build:
     removeRunDependency('wasm-instantiate');
 #endif // ~USE_PTHREADS
-
+    return exports;
   }
   // wait for the pthread pool (if any)
   addRunDependency('wasm-instantiate');

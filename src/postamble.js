@@ -142,7 +142,6 @@ function stackCheckInit() {
 var dylibsLoaded = false;
 #endif
 
-/** @type {function(Array=)} */
 #if MAIN_READS_PARAMS
 function run(args = arguments_) {
 #else
